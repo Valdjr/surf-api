@@ -11,8 +11,7 @@
             }
         },
         "auth": {
-            "key": "JWT_SECREVET_KEY",
-            "expiresIn": "86400"
+            "key": "JWT_SECREVET_KEY"
         }
     }
 }
