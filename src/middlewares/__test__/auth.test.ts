@@ -28,6 +28,7 @@ describe('AuthMIddleware', () => {
             })),
         }
         const nextFake = jest.fn()
+        // eslint-disable-next-line @typescript-eslint/ban-types
         authMiddleware(reqFake, resFake as object, nextFake)
         expect(resFake.status).toHaveBeenCalledWith(401)
         expect(sendMock).toHaveBeenCalledWith({
@@ -47,6 +48,7 @@ describe('AuthMIddleware', () => {
             })),
         }
         const nextFake = jest.fn()
+        // eslint-disable-next-line @typescript-eslint/ban-types
         authMiddleware(reqFake, resFake as object, nextFake)
         expect(resFake.status).toHaveBeenCalledWith(401)
         expect(sendMock).toHaveBeenCalledWith({
